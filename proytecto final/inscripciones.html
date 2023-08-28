@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Inscripciones</title>
+</head>
+<body>
+    
+</body>
+</html>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="./index.html">Proyecto GC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="quienessomos.html">Quiénes Somos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#proyecto">Proyecto</a></li>
+                <li class="nav-item"><a class="nav-link" href="colaborar.html">Colaborar</a></li>
+                <li class="nav-item"><a class="nav-link" href="inscripciones.html">Inscripciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="actividades.html" target="_blank">Actividades</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section id="inscripciones" class="container mt-5">
+    <h2>Inscripciones</h2>
+    <form id="inscription-form">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="nombre-alumno">Nombre del Alumno:</label>
+            <input type="text" class="form-control" id="nombre-alumno" name="nombre-alumno" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="telefono">Número de Teléfono:</label>
+            <input type="tel" class="form-control" id="telefono" name="telefono" required>
+        </div>
+        <div class="form-group">
+            <label for="turno">Turno:</label>
+            <select class="form-control" id="turno" name="turno">
+                <option value="manana">Mañana</option>
+                <option value="tarde">Tarde</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="mensaje">Mensaje (máximo 200 caracteres):</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" maxlength="200"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar Inscripción</button>
+    </form>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Contacto</h3>
+                    <form id="footer-contact-form">
+                        <div class="form-group">
+                            <label for="footer-name">Nombre:</label>
+                            <input type="text" class="form-control" id="footer-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="footer-email">Correo Electrónico:</label>
+                            <input type="email" class="form-control" id="footer-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="footer-message">Mensaje:</label>
+                            <textarea class="form-control" id="footer-message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h3>BS AS</h3>
+                    <p>Direccion 123, BS AS</p>
+                </div>
+            </div>
+        </div>
+    </footer>
